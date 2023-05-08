@@ -4,4 +4,4 @@
 .idea/*
 Backups/
 .backups/
-synchronizeCloud.sh
+synchronizeCloudMac.sh
