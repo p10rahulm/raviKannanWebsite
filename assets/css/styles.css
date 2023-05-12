@@ -37,7 +37,7 @@ a:hover {
 }
 
 .header {
-    top: 0px;
+    top: 0;
     grid-area: header;
     /*background-color: #f7f7f7;*/
     background-color: #fafafa;
@@ -90,7 +90,6 @@ a:hover {
 
 .sticky {
     position: sticky;
-    position: -webkit-sticky;
 }
 
 .disappear {
@@ -113,6 +112,9 @@ a:hover {
         flex-wrap: wrap;
     }
     #Organizers .organizer-card{
+        text-align: center;
+    }
+    #Talks .author-card{
         text-align: center;
     }
 }
@@ -381,7 +383,16 @@ a:hover {
     padding: 10px 20px;
     box-shadow: 5px 10px 18px #f4f4f4;
     border-radius: 5px;
+    display: flex;
+    flex-basis: 330px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .mainer #Talks .author-card:hover {
     /*transition: transform .75s;*/
@@ -390,13 +401,6 @@ a:hover {
     transform: translateY(-5px);
 }
 
-.mainer #Talks .author-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
 .mainer #Talks .author-card .speaker-image-holder {
     flex-basis: 135px;
@@ -413,7 +417,7 @@ a:hover {
 }
 
 .mainer #Talks .author-card .speaker-main-holder {
-    flex-basis: 220px;
+    flex-basis: 225px;
     flex-grow: 1;
     flex-shrink: 0;
     /*float: left;*/
@@ -430,20 +434,16 @@ a:hover {
 
 
 
-.mainer #Talks .author-card{
-    flex-basis: 240px;
-    flex-grow: 1;
-    flex-shrink: 0;
-}
+
 
 .mainer #Talks .author-card .seminar-speaker {
     font-weight: bold;
     /*color: #f77e7e;*/
     color: #873307;
     padding: 0 0 0.5em 0;
-    margin: 5px auto;
-    width: 200px;
-    text-align: center;
+    margin: 5px 0;
+    width: 300px;
+    /*text-align: center;*/
     /*border-bottom: 1px solid rgba(0, 26, 250, 0.12);*/
 }
 
@@ -458,7 +458,7 @@ a:hover {
     color: #525252;
     padding: 0 0 0.5em 0;
     margin: 10px auto;
-    text-align: center;
+    /*text-align: center;*/
     font-size: max(12px, 1em);
     /*font-family: "Lora", Georgia, Cambria, Times, "Times New Roman", Serif;*/
     /*border-bottom: 1px solid rgba(0, 26, 250, 0.12);*/
@@ -564,8 +564,8 @@ a:hover {
 .footer{
     /*position: fixed;*/
     min-height: 25px;
-    bottom: 0px;
-    margin-bottom: 0px;
+    bottom: 0;
+    margin-bottom: 0;
     background-color: white;
     font-size: 1.6vh;
     /*position: sticky;*/
@@ -581,7 +581,7 @@ a:hover {
 
 /*Seminar*/
 #seminarHome {
-    margin: 25px 0px;
+    margin: 25px 0;
 }
 
 #seminarHome .seminar-title {
@@ -599,12 +599,12 @@ a:hover {
     font-family: Lora, Georgia, Cambria, Times, "Times New Roman", Serif;
     color: #093598;
     border-bottom: 1px solid #ececec;
-    padding: 5px 0px 10px 0px;
+    padding: 5px 0 10px 0;
     font-weight: bold;
 }
 
 #seminarHome .seminar-dateloc {
-    padding: 15px 0px;
+    padding: 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -613,7 +613,7 @@ a:hover {
 }
 
 #seminarHome .seminar-dateloc {
-    padding: 15px 0px;
+    padding: 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -622,7 +622,7 @@ a:hover {
 }
 
 #seminarHome .seminar-dateloc-child {
-    padding: 5px 0px;
+    padding: 5px 0;
     /*color: #006544;*/
     color: #00631e;
     font-family: Lora, Georgia, Cambria, Times, "Times New Roman", Serif;
@@ -630,7 +630,7 @@ a:hover {
 
 #seminarHome .seminar-abstract {
     font-family: "Open Sans", Georgia, Cambria, "Times New Roman", Times, serif;
-    padding: 15px 0px;
+    padding: 15px 0;
     text-align: justify;
     line-height: 1.6;
 
@@ -754,7 +754,7 @@ a:hover {
 }
 #SpeakerPageHolder .speaker-bio-title{
     text-align: center;
-    margin: 15px auto 0px;
+    margin: 15px auto 0;
     padding: 10px 0;
     font-family: Lora, Georgia, Cambria, Times, "Times New Roman", Serif;
     font-size: max(14px, 1.2em);
