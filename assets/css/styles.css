@@ -763,3 +763,12 @@ a:hover {
     width: 100%;
     font-weight: bold;
 }
+
+
+#schedule .schedule-speaker-link{
+    color: #575757;
+}
+#schedule .schedule-speaker-link:hover{
+    color: #575757;
+    text-decoration: underline;
+}
